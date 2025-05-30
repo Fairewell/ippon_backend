@@ -1,0 +1,160 @@
+# Руководство по тестированию API в Postman
+
+## 1. Аутентификация
+
+### Регистрация
+- **Метод:** POST
+- **URL:** `/auth/register`
+- **Тело запроса (JSON):**
+```json
+{
+  "username": "testuser",
+  "email": "test@example.com",
+  "password": "password123"
+}
+```
+
+### Вход (получение токена)
+- **Метод:** POST
+- **URL:** `/auth/login`
+- **Тело запроса (JSON):**
+```json
+{
+  "email": "test@example.com",
+  "password": "password123"
+}
+```
+- **В ответе:** токен в формате `{ "token": "..." }`
+
+### Получение текущего пользователя
+- **Метод:** GET
+- **URL:** `/auth/me`
+- **Заголовок:** `Authorization: Bearer <token>`
+
+---
+
+## 2. Услуги (Services)
+
+### Получить все услуги
+- **Метод:** GET
+- **URL:** `/services`
+
+### Получить услугу по ID
+- **Метод:** GET
+- **URL:** `/services/:id`
+
+### Проверить доступность услуги
+- **Метод:** GET
+- **URL:** `/services/:id/available?startDate=2025-06-01&endDate=2025-06-05`
+
+### Создать услугу (только админ)
+- **Метод:** POST
+- **URL:** `/services`
+- **Заголовок:** `Authorization: Bearer <admin_token>`
+- **Тело запроса (JSON):**
+```json
+{
+  "name": "Новая услуга",
+  "description": "Описание услуги",
+  "price_per_day": 1500
+}
+```
+
+### Обновить услугу (только админ)
+- **Метод:** PUT
+- **URL:** `/services/:id`
+- **Заголовок:** `Authorization: Bearer <admin_token>`
+- **Тело запроса (JSON):**
+```json
+{
+  "name": "Обновленное название",
+  "description": "Обновленное описание",
+  "price_per_day": 2000
+}
+```
+
+### Удалить услугу (только админ)
+- **Метод:** DELETE
+- **URL:** `/services/:id`
+- **Заголовок:** `Authorization: Bearer <admin_token>`
+
+---
+
+## 3. Корзина (Cart)
+
+### Получить корзину
+- **Метод:** GET
+- **URL:** `/cart`
+- **Заголовок:** `Authorization: Bearer <token>`
+
+### Добавить услугу в корзину
+- **Метод:** POST
+- **URL:** `/cart/add`
+- **Заголовок:** `Authorization: Bearer <token>`
+- **Тело запроса (JSON):**
+```json
+{
+  "serviceId": 1,
+  "startDate": "2025-06-01",
+  "endDate": "2025-06-05"
+}
+```
+
+### Удалить услугу из корзины
+- **Метод:** DELETE
+- **URL:** `/cart/:id`
+- **Заголовок:** `Authorization: Bearer <token>`
+
+### Очистить корзину
+- **Метод:** DELETE
+- **URL:** `/cart`
+- **Заголовок:** `Authorization: Bearer <token>`
+
+---
+
+## 4. Бронирования (Bookings)
+
+### Создать бронирование
+- **Метод:** POST
+- **URL:** `/bookings`
+- **Заголовок:** `Authorization: Bearer <token>`
+- **Тело запроса (JSON):**
+```json
+{
+  "serviceId": 1,
+  "startDate": "2025-06-01",
+  "endDate": "2025-06-05"
+}
+```
+
+### Получить бронирования пользователя
+- **Метод:** GET
+- **URL:** `/bookings`
+- **Заголовок:** `Authorization: Bearer <token>`
+
+### Обновить статус бронирования (только админ)
+- **Метод:** PUT
+- **URL:** `/bookings/:id/status`
+- **Заголовок:** `Authorization: Bearer <admin_token>`
+- **Тело запроса (JSON):**
+```json
+{
+  "status": "confirmed"
+}
+```
+
+### Оформить заказ из корзины
+- **Метод:** POST
+- **URL:** `/bookings/checkout`
+- **Заголовок:** `Authorization: Bearer <token>`
+
+---
+
+## Примечания
+1. Для административных действий нужен пользователь с ролью `admin` (можно изменить в БД)
+2. Даты передавать в формате `YYYY-MM-DD`
+3. Все запросы (кроме аутентификации) требуют JWT-токен в заголовке
+4. Для тестирования доступности услуг используйте параметры запроса:  
+   `serviceId` - ID услуги  
+   `startDate` - дата начала  
+   `endDate` - дата окончания
