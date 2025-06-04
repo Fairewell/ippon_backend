@@ -7,8 +7,21 @@ const logger = require('../utils/logger'); // Добавлен импорт ло
 // Создание бронирования
 exports.createBooking = async (req, res) => {
   try {
-    const { serviceId, startDate, endDate } = req.body;
-    const userId = req.user.id;
+    const { serviceId, startDate, endDate, guestName, guestEmail, guestPhone } = req.body;
+    let userId = null;
+    let guestData = {};
+
+    // Если пользователь авторизован
+    if (req.user) {
+      userId = req.user.id;
+    }
+    // Если не авторизован - проверяем гостевые данные
+    else {
+      if (!guestName || !guestEmail || !guestPhone) {
+        return res.status(400).json({ error: 'For guest booking, name, email and phone are required' });
+      }
+      guestData = { guestName, guestEmail, guestPhone };
+    }
 
     // Проверка доступности услуги
     const isAvailable = await Booking.checkAvailability(serviceId, startDate, endDate);
@@ -29,10 +42,14 @@ exports.createBooking = async (req, res) => {
     // Создание бронирования
     const booking = await Booking.create({
       userId,
+      name: guestName || null,
+      email: guestEmail || null,
+      phone: guestPhone || null,
       serviceId,
       startDate,
       endDate,
-      totalPrice
+      totalPrice,
+      ...guestData
     });
 
     // Отправка уведомления в Telegram

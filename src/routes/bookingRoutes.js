@@ -3,9 +3,10 @@ const router = express.Router();
 const bookingController = require('../controllers/bookingController');
 const authMiddleware = require('../middleware/authMiddleware');
 const adminMiddleware = require('../middleware/adminMiddleware');
+const bookingValidator = require('../validators/bookingValidator'); // Добавлен импорт валидатора
 
 // Создать бронирование
-router.post('/', authMiddleware, bookingController.createBooking);
+router.post('/', bookingValidator.createBookingValidator, bookingController.createBooking);
 
 // Получить бронирования пользователя
 router.get('/', authMiddleware, bookingController.getUserBookings);

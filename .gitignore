@@ -1,4 +1,21 @@
+# Зависимости
 node_modules/
+
+# Файлы окружения
 .env
+
+# Системные файлы
 .DS_Store
+
+# Логи
+*.log
 npm-debug.log
+app.log
+
+# Временные файлы и папки
+temp/
+*.tmp
+
+# Файлы данных (Excel, CSV)
+*.xlsx
+*.csv

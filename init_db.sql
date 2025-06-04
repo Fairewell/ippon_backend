@@ -23,6 +23,9 @@ CREATE TABLE Services (
 CREATE TABLE Bookings (
     id SERIAL PRIMARY KEY,
     user_id INTEGER REFERENCES Users(id),
+    guest_name VARCHAR(100),
+    guest_email VARCHAR(100),
+    guest_phone VARCHAR(20),
     service_id INTEGER REFERENCES Services(id),
     start_date DATE NOT NULL,
     end_date DATE NOT NULL,

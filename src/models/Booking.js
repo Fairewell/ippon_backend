@@ -1,13 +1,13 @@
 const { pool } = require('../config/database');
 
 class Booking {
-  static async create({ userId, serviceId, startDate, endDate, totalPrice, status = 'pending' }) {
+  static async create({ userId, serviceId, startDate, endDate, totalPrice, status = 'pending', name, email, phone }) {
     const query = `
-      INSERT INTO bookings (user_id, service_id, start_date, end_date, total_price, status)
-      VALUES ($1, $2, $3, $4, $5, $6)
+      INSERT INTO bookings (user_id, service_id, start_date, end_date, total_price, status, guest_name, guest_email, guest_phone)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
       RETURNING *
     `;
-    const values = [userId, serviceId, startDate, endDate, totalPrice, status];
+    const values = [userId, serviceId, startDate, endDate, totalPrice, status, name, email, phone];
     const { rows } = await pool.query(query, values);
     return rows[0];
   }
