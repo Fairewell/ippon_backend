@@ -1,6 +1,8 @@
 require('dotenv').config();
 const express = require('express');
-const logger = require('./src/utils/logger'); // Добавлен импорт логгера
+const helmet = require('helmet');
+const cors = require('cors');
+const logger = require('./src/utils/logger');
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -15,9 +17,21 @@ process.on('unhandledRejection', (reason, promise) => {
   logger.error('Unhandled Rejection at:', promise, 'reason:', reason);
 });
 
-// Middleware
+// Middleware безопасности
+app.use(helmet());
+
+// Настройка CORS
+const corsOptions = {
+  origin: process.env.NODE_ENV === 'production'
+    ? process.env.ALLOWED_ORIGINS.split(',')
+    : '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+app.use(cors(corsOptions));
+
 app.use(express.json());
-app.use(require('./src/middleware/requestLogger')); // Добавляем middleware для логирования запросов
+app.use(require('./src/middleware/requestLogger'));
 
 // Routes
 const authRoutes = require('./src/routes/authRoutes');
@@ -29,6 +43,10 @@ app.use('/api/auth', authRoutes);
 app.use('/api/services', serviceRoutes);
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/cart', cartRoutes);
+
+// Admin routes
+const adminRoutes = require('./src/routes/adminRoutes');
+app.use('/api/admin', adminRoutes);
 
 // Test route
 app.get('/', (req, res) => {

@@ -52,10 +52,12 @@ exports.createBooking = async (req, res) => {
       ...guestData
     });
 
-    // Отправка уведомления в Telegram
-    await telegramService.sendNewBookingNotification(booking.id);
-
     res.status(201).json(booking);
+    
+    res.on('finish', () => {
+      telegramService.sendNewBookingNotification(booking.id, process.env.TELEGRAM_CHAT_ID)
+        .catch(error => logger.error('Telegram notification failed:', error));
+    })
   } catch (error) {
     logger.error('Create booking error:', error);
     res.status(500).json({ error: 'Failed to create booking' });
@@ -88,7 +90,7 @@ exports.updateBookingStatus = async (req, res) => {
     const booking = await Booking.updateStatus(bookingId, status);
     
     // Отправляем уведомление об изменении статуса
-    await telegramService.sendBookingStatusUpdate(bookingId, currentBooking.status, status);
+    await telegramService.sendBookingStatusUpdate(bookingId, currentBooking.status, status, process.env.TELEGRAM_CHAT_ID);
 
     res.json(booking);
   } catch (error) {
@@ -132,7 +134,7 @@ exports.checkout = async (req, res) => {
       });
 
       bookings.push(booking);
-      await telegramService.sendNewBookingNotification(booking.id);
+      await telegramService.sendNewBookingNotification(booking.id, process.env.TELEGRAM_CHAT_ID);
     }
 
     // Очищаем корзину после оформления

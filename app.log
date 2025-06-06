@@ -555,3 +555,212 @@
 {"level":"info","message":"Response: GET /api/services - 304 [17ms]","timestamp":"2025-06-04T07:03:37.002Z"}
 {"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-04T07:03:37.066Z"}
 {"level":"info","message":"Response: GET /api/services - 304 [31ms]","timestamp":"2025-06-04T07:03:37.097Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T02:01:59.263Z"}
+{"level":"info","message":"Incoming request: POST /api/auth/login","timestamp":"2025-06-06T02:03:10.165Z"}
+{"level":"error","message":"Login error: Invalid credentials","stack":"Error: Invalid credentials\n    at AuthService.login (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\services\\authService.js:18:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.login (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\controllers\\authController.js:48:19)","timestamp":"2025-06-06T02:03:10.466Z"}
+{"level":"info","message":"Response: POST /api/auth/login - 401 [308ms]","timestamp":"2025-06-06T02:03:10.473Z"}
+{"level":"info","message":"Incoming request: POST /api/auth/register","timestamp":"2025-06-06T02:03:22.968Z"}
+{"level":"info","message":"Response: POST /api/auth/register - 201 [255ms]","timestamp":"2025-06-06T02:03:23.223Z"}
+{"level":"info","message":"Incoming request: POST /api/auth/login","timestamp":"2025-06-06T02:05:47.337Z"}
+{"level":"info","message":"Response: POST /api/auth/login - 200 [319ms]","timestamp":"2025-06-06T02:05:47.656Z"}
+{"level":"info","message":"Incoming request: POST /api/telegram/","timestamp":"2025-06-06T02:06:12.515Z"}
+{"level":"info","message":"Response: POST /api/telegram/ - 404 [5ms]","timestamp":"2025-06-06T02:06:12.520Z"}
+{"level":"info","message":"Incoming request: POST /api/telegram/chat-id","timestamp":"2025-06-06T02:06:20.535Z"}
+{"level":"info","message":"Response: POST /api/telegram/chat-id - 404 [8ms]","timestamp":"2025-06-06T02:06:20.543Z"}
+{"level":"info","message":"Incoming request: POST /api/admin/telegram/chat-id","timestamp":"2025-06-06T02:06:47.846Z"}
+{"level":"info","message":"Response: POST /api/admin/telegram/chat-id - 403 [112ms]","timestamp":"2025-06-06T02:06:47.958Z"}
+{"level":"info","message":"Incoming request: POST /api/admin/telegram/chat-id","timestamp":"2025-06-06T02:07:26.387Z"}
+{"level":"error","message":"TypeError: Cannot destructure property 'chatId' of 'req.body' as it is undefined.\n    at C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\routes\\adminRoutes.js:9:11\n    at Layer.handleRequest (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\node_modules\\router\\lib\\route.js:157:13)\n    at adminMiddleware (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\middleware\\adminMiddleware.js:3:5)\n    at Layer.handleRequest (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\node_modules\\router\\lib\\route.js:157:13)\n    at authMiddleware (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\middleware\\authMiddleware.js:26:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-06T02:07:26.484Z"}
+{"level":"info","message":"Response: POST /api/admin/telegram/chat-id - 500 [100ms]","timestamp":"2025-06-06T02:07:26.487Z"}
+{"level":"info","message":"Incoming request: POST /api/admin/telegram/chat-id","timestamp":"2025-06-06T02:08:10.019Z"}
+{"level":"info","message":"Response: POST /api/admin/telegram/chat-id - 400 [92ms]","timestamp":"2025-06-06T02:08:10.111Z"}
+{"level":"info","message":"Incoming request: POST /api/admin/telegram/chat-id","timestamp":"2025-06-06T02:08:18.638Z"}
+{"level":"info","message":"Telegram chat ID updated to: idsad","timestamp":"2025-06-06T02:08:18.649Z"}
+{"level":"info","message":"Response: POST /api/admin/telegram/chat-id - 200 [23ms]","timestamp":"2025-06-06T02:08:18.661Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T02:09:12.065Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:09:49.813Z"}
+{"level":"info","message":"Response: GET /api/services - 200 [836ms]","timestamp":"2025-06-06T02:09:50.649Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:09:51.005Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [20ms]","timestamp":"2025-06-06T02:09:51.025Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:10:21.823Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [127ms]","timestamp":"2025-06-06T02:10:21.950Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:10:36.918Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [703ms]","timestamp":"2025-06-06T02:10:37.620Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:11:36.879Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [178ms]","timestamp":"2025-06-06T02:11:37.057Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:11:49.353Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [143ms]","timestamp":"2025-06-06T02:11:49.496Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:12:08.641Z"}
+{"level":"error","message":"Telegram notification error: Cannot read properties of undefined (reading 'findById')","stack":"TypeError: Cannot read properties of undefined (reading 'findById')\n    at exports.sendNewBookingNotification (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\services\\telegramService.js:22:35)\n    at exports.createBooking (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\controllers\\bookingController.js:56:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-06T02:12:08.832Z"}
+{"level":"info","message":"Response: POST /api/bookings - 201 [195ms]","timestamp":"2025-06-06T02:12:08.836Z"}
+{"level":"info","message":"Incoming request: POST /api/admin/telegram/chat-id","timestamp":"2025-06-06T02:12:55.733Z"}
+{"level":"info","message":"Telegram chat ID updated to: 1386380856","timestamp":"2025-06-06T02:12:55.832Z"}
+{"level":"info","message":"Response: POST /api/admin/telegram/chat-id - 200 [100ms]","timestamp":"2025-06-06T02:12:55.833Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:12:59.946Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [21ms]","timestamp":"2025-06-06T02:12:59.967Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:13:00.092Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [29ms]","timestamp":"2025-06-06T02:13:00.122Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:13:18.833Z"}
+{"level":"error","message":"Telegram notification error: Cannot read properties of undefined (reading 'findById')","stack":"TypeError: Cannot read properties of undefined (reading 'findById')\n    at exports.sendNewBookingNotification (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\services\\telegramService.js:22:35)\n    at exports.createBooking (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\controllers\\bookingController.js:56:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-06T02:13:19.049Z"}
+{"level":"info","message":"Response: POST /api/bookings - 201 [218ms]","timestamp":"2025-06-06T02:13:19.051Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T02:14:57.406Z"}
+{"level":"info","message":"Incoming request: POST /api/admin/telegram/chat-id","timestamp":"2025-06-06T02:16:35.995Z"}
+{"level":"info","message":"Telegram chat ID updated to: 1386380856","timestamp":"2025-06-06T02:16:36.411Z"}
+{"level":"info","message":"Response: POST /api/admin/telegram/chat-id - 200 [423ms]","timestamp":"2025-06-06T02:16:36.417Z"}
+{"level":"info","message":"Incoming request: POST /api/booking","timestamp":"2025-06-06T02:17:19.805Z"}
+{"level":"info","message":"Response: POST /api/booking - 404 [6ms]","timestamp":"2025-06-06T02:17:19.811Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:17:27.249Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [13ms]","timestamp":"2025-06-06T02:17:27.262Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:17:39.785Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [6ms]","timestamp":"2025-06-06T02:17:39.791Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:17:42.865Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [3ms]","timestamp":"2025-06-06T02:17:42.868Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:17:57.074Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [3ms]","timestamp":"2025-06-06T02:17:57.077Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:19:35.061Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [3ms]","timestamp":"2025-06-06T02:19:35.064Z"}
+{"level":"error","message":"SyntaxError: Expected double-quoted property name in JSON at position 316 (line 12 column 1)\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\node_modules\\body-parser\\lib\\types\\json.js:77:19)\n    at C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\node_modules\\body-parser\\lib\\read.js:123:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2025-06-06T02:19:45.311Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:19:53.261Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [39ms]","timestamp":"2025-06-06T02:19:53.300Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:20:05.352Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [1221ms]","timestamp":"2025-06-06T02:20:06.573Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:20:06.591Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [105ms]","timestamp":"2025-06-06T02:20:06.696Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:20:29.296Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [147ms]","timestamp":"2025-06-06T02:20:29.443Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:20:50.771Z"}
+{"level":"info","message":"Response: POST /api/bookings - 201 [189ms]","timestamp":"2025-06-06T02:20:50.960Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T02:21:47.701Z"}
+{"level":"info","message":"Incoming request: POST /api/admin/telegram/chat-id","timestamp":"2025-06-06T02:21:57.596Z"}
+{"level":"info","message":"Response: POST /api/admin/telegram/chat-id - 401 [8ms]","timestamp":"2025-06-06T02:21:57.604Z"}
+{"level":"info","message":"Incoming request: POST /api/auth/login","timestamp":"2025-06-06T02:22:34.042Z"}
+{"level":"info","message":"Response: POST /api/auth/login - 200 [288ms]","timestamp":"2025-06-06T02:22:34.330Z"}
+{"level":"info","message":"Incoming request: POST /api/admin/telegram/chat-id","timestamp":"2025-06-06T02:22:43.625Z"}
+{"level":"info","message":"Telegram chat ID updated to: 1386380856","timestamp":"2025-06-06T02:22:43.631Z"}
+{"level":"info","message":"Response: POST /api/admin/telegram/chat-id - 200 [8ms]","timestamp":"2025-06-06T02:22:43.633Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:23:25.784Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [237ms]","timestamp":"2025-06-06T02:23:26.021Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:23:26.030Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [8ms]","timestamp":"2025-06-06T02:23:26.038Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:23:28.112Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [128ms]","timestamp":"2025-06-06T02:23:28.240Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:23:28.404Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [50ms]","timestamp":"2025-06-06T02:23:28.454Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:23:52.699Z"}
+{"level":"info","message":"Response: POST /api/bookings - 201 [187ms]","timestamp":"2025-06-06T02:23:52.886Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T02:25:32.939Z"}
+{"level":"info","message":"Incoming request: POST /api/admin/telegram/chat-id","timestamp":"2025-06-06T02:25:37.535Z"}
+{"level":"info","message":"Telegram chat ID updated to: 1386380856","timestamp":"2025-06-06T02:25:37.636Z"}
+{"level":"info","message":"Response: POST /api/admin/telegram/chat-id - 200 [105ms]","timestamp":"2025-06-06T02:25:37.640Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:26:08.787Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [302ms]","timestamp":"2025-06-06T02:26:09.089Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:26:09.135Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [14ms]","timestamp":"2025-06-06T02:26:09.149Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:26:09.219Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [14ms]","timestamp":"2025-06-06T02:26:09.233Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:26:09.887Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [44ms]","timestamp":"2025-06-06T02:26:09.931Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:26:19.105Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [27ms]","timestamp":"2025-06-06T02:26:19.132Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:26:19.205Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [18ms]","timestamp":"2025-06-06T02:26:19.223Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:26:45.863Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [200ms]","timestamp":"2025-06-06T02:26:46.063Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:26:53.953Z"}
+{"level":"info","message":"Response: POST /api/bookings - 201 [26ms]","timestamp":"2025-06-06T02:26:53.979Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T02:29:38.248Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:29:42.498Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [343ms]","timestamp":"2025-06-06T02:29:42.841Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:29:42.852Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [51ms]","timestamp":"2025-06-06T02:29:42.903Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:29:45.008Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [67ms]","timestamp":"2025-06-06T02:29:45.076Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:29:45.473Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [265ms]","timestamp":"2025-06-06T02:29:45.738Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:30:08.628Z"}
+{"level":"info","message":"Response: POST /api/bookings - 201 [163ms]","timestamp":"2025-06-06T02:30:08.792Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T02:32:10.539Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:33:31.027Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [465ms]","timestamp":"2025-06-06T02:33:31.493Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:33:31.501Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [8ms]","timestamp":"2025-06-06T02:33:31.509Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:33:34.513Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [75ms]","timestamp":"2025-06-06T02:33:34.588Z"}
+{"level":"info","message":"Incoming request: GET /api/services","timestamp":"2025-06-06T02:33:34.954Z"}
+{"level":"info","message":"Response: GET /api/services - 304 [110ms]","timestamp":"2025-06-06T02:33:35.064Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:33:51.706Z"}
+{"level":"info","message":"Sending new booking notification for booking ID: 8 to chat ID: 1386380856","timestamp":"2025-06-06T02:33:51.901Z"}
+{"level":"error","message":"Telegram notification error: Cannot read properties of undefined (reading 'findById')","stack":"TypeError: Cannot read properties of undefined (reading 'findById')\n    at exports.sendNewBookingNotification (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\services\\telegramService.js:23:35)\n    at exports.createBooking (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\controllers\\bookingController.js:56:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-06T02:33:51.903Z"}
+{"level":"info","message":"Response: POST /api/bookings - 201 [204ms]","timestamp":"2025-06-06T02:33:51.910Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T02:35:20.457Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings","timestamp":"2025-06-06T02:35:46.763Z"}
+{"level":"info","message":"Response: POST /api/bookings - 400 [22ms]","timestamp":"2025-06-06T02:35:46.785Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T02:35:54.339Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 400 [10ms]","timestamp":"2025-06-06T02:35:54.349Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T02:36:00.082Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 400 [3ms]","timestamp":"2025-06-06T02:36:00.085Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T02:36:49.162Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 400 [125ms]","timestamp":"2025-06-06T02:36:49.287Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T02:36:54.613Z"}
+{"level":"info","message":"Sending new booking notification for booking ID: 9 to chat ID: 1386380856","timestamp":"2025-06-06T02:36:54.626Z"}
+{"level":"error","message":"Telegram notification error: Cannot read properties of undefined (reading 'findById')","stack":"TypeError: Cannot read properties of undefined (reading 'findById')\n    at exports.sendNewBookingNotification (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\services\\telegramService.js:23:35)\n    at exports.createBooking (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\controllers\\bookingController.js:56:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-06T02:36:54.628Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 201 [17ms]","timestamp":"2025-06-06T02:36:54.630Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T02:38:23.647Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T02:39:01.614Z"}
+{"level":"info","message":"Sending new booking notification for booking ID: 10 to chat ID: 1386380856","timestamp":"2025-06-06T02:39:01.745Z"}
+{"level":"error","message":"Telegram notification error: Cannot read properties of undefined (reading 'findById')","stack":"TypeError: Cannot read properties of undefined (reading 'findById')\n    at exports.sendNewBookingNotification (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\services\\telegramService.js:23:35)\n    at exports.createBooking (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\controllers\\bookingController.js:56:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-06T02:39:01.746Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 201 [139ms]","timestamp":"2025-06-06T02:39:01.753Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T02:47:55.845Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T02:48:04.464Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 400 [436ms]","timestamp":"2025-06-06T02:48:04.899Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T02:48:15.058Z"}
+{"level":"info","message":"Sending new booking notification for booking ID: 11 to chat ID: 1386380856","timestamp":"2025-06-06T02:48:15.174Z"}
+{"level":"error","message":"Telegram notification error: Cannot read properties of undefined (reading 'findById')","stack":"TypeError: Cannot read properties of undefined (reading 'findById')\n    at exports.sendNewBookingNotification (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\services\\telegramService.js:23:35)\n    at exports.createBooking (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\controllers\\bookingController.js:56:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-06T02:48:15.177Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 201 [121ms]","timestamp":"2025-06-06T02:48:15.179Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T02:55:58.281Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T02:56:38.214Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 400 [307ms]","timestamp":"2025-06-06T02:56:38.521Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T02:56:42.098Z"}
+{"level":"info","message":"Sending new booking notification for booking ID: 12 to chat ID: 1386380856","timestamp":"2025-06-06T02:56:42.127Z"}
+{"level":"error","message":"Telegram notification error: Cannot read properties of undefined (reading 'findById')","stack":"TypeError: Cannot read properties of undefined (reading 'findById')\n    at exports.sendNewBookingNotification (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\services\\telegramService.js:23:35)\n    at exports.createBooking (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\controllers\\bookingController.js:58:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-06T02:56:42.129Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 201 [34ms]","timestamp":"2025-06-06T02:56:42.132Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T02:59:59.443Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T03:00:11.149Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T03:00:16.576Z"}
+{"level":"info","message":"Sending new booking notification for booking ID: 13 to chat ID: 1386380856","timestamp":"2025-06-06T03:00:16.703Z"}
+{"level":"error","message":"Telegram notification error: Cannot read properties of undefined (reading 'findById')","stack":"TypeError: Cannot read properties of undefined (reading 'findById')\n    at exports.sendNewBookingNotification (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\services\\telegramService.js:23:35)\n    at exports.createBooking (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\controllers\\bookingController.js:58:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-06T03:00:16.705Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 201 [133ms]","timestamp":"2025-06-06T03:00:16.709Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T03:00:47.281Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T03:00:51.526Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T03:03:07.592Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T03:03:11.748Z"}
+{"level":"info","message":"Sending new booking notification for booking ID: 14 to chat ID: 1386380856","timestamp":"2025-06-06T03:03:11.872Z"}
+{"level":"error","message":"Telegram notification error: Cannot read properties of undefined (reading 'Booking')","stack":"TypeError: Cannot read properties of undefined (reading 'Booking')\n    at exports.sendNewBookingNotification (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\services\\telegramService.js:23:35)\n    at exports.createBooking (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\controllers\\bookingController.js:58:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-06T03:03:11.879Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 201 [140ms]","timestamp":"2025-06-06T03:03:11.888Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T03:04:48.539Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T03:04:54.889Z"}
+{"level":"info","message":"Sending new booking notification for booking ID: 15 to chat ID: 1386380856","timestamp":"2025-06-06T03:04:55.010Z"}
+{"level":"error","message":"Telegram notification error: Cannot read properties of undefined (reading 'findById')","stack":"TypeError: Cannot read properties of undefined (reading 'findById')\n    at exports.sendNewBookingNotification (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\services\\telegramService.js:23:33)\n    at exports.createBooking (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\controllers\\bookingController.js:58:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-06T03:04:55.015Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 201 [155ms]","timestamp":"2025-06-06T03:04:55.044Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T03:10:36.494Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T03:10:44.472Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 201 [122ms]","timestamp":"2025-06-06T03:10:44.593Z"}
+{"level":"info","message":"Sending new booking notification for booking ID: 16 to chat ID: 1386380856","timestamp":"2025-06-06T03:10:44.595Z"}
+{"level":"error","message":"Telegram notification error: Cannot read properties of undefined (reading 'findById')","stack":"TypeError: Cannot read properties of undefined (reading 'findById')\n    at exports.sendNewBookingNotification (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\services\\telegramService.js:23:33)\n    at ServerResponse.<anonymous> (C:\\Users\\ASUS\\Desktop\\ВИКА СЕССИЯ\\diplom_site\\backend\\src\\controllers\\bookingController.js:58:23)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1081:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)","timestamp":"2025-06-06T03:10:44.598Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T03:18:07.524Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T03:18:54.466Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T03:19:30.858Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T03:19:35.787Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 201 [124ms]","timestamp":"2025-06-06T03:19:35.911Z"}
+{"level":"info","message":"Sending new booking notification for booking ID: 17 to chat ID: 1386380856","timestamp":"2025-06-06T03:19:35.912Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T03:20:43.340Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T03:22:26.601Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T03:22:34.719Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 201 [572ms]","timestamp":"2025-06-06T03:22:35.291Z"}
+{"level":"info","message":"Sending new booking notification for booking ID: 18 to chat ID: 1386380856","timestamp":"2025-06-06T03:22:35.293Z"}
+{"level":"info","message":"Notification sent for booking ID: 18","timestamp":"2025-06-06T03:22:36.238Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-06-06T03:23:28.460Z"}
+{"level":"info","message":"Incoming request: POST /api/bookings/","timestamp":"2025-06-06T03:24:26.075Z"}
+{"level":"info","message":"Response: POST /api/bookings/ - 201 [265ms]","timestamp":"2025-06-06T03:24:26.340Z"}
+{"level":"info","message":"Sending new booking notification for booking ID: 1 to chat ID: 1386380856","timestamp":"2025-06-06T03:24:26.341Z"}
+{"level":"info","message":"Notification sent for booking ID: 1","timestamp":"2025-06-06T03:24:27.460Z"}
