@@ -26,23 +26,25 @@ const corsOptions = {
     ? process.env.ALLOWED_ORIGINS.split(',')
     : '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true, // Fixed typo: credential -> credentials
 };
 app.use(cors(corsOptions));
-
+// Parse JSON bodies
 app.use(express.json());
-app.use(require('./src/middleware/requestLogger'));
 
 // Routes
 const authRoutes = require('./src/routes/authRoutes');
 const serviceRoutes = require('./src/routes/serviceRoutes');
 const bookingRoutes = require('./src/routes/bookingRoutes');
 const cartRoutes = require('./src/routes/cartRoutes');
+const reviewRoutes = require('./src/routes/reviewRoutes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/services', serviceRoutes);
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/cart', cartRoutes);
+app.use('/api/reviews', reviewRoutes);
 
 // Admin routes
 const adminRoutes = require('./src/routes/adminRoutes');

@@ -26,6 +26,7 @@
     "mongoose": "^8.15.1",
     "node-telegram-bot-api": "^0.66.0",
     "pg": "^8.16.0",
+    "sequelize": "^6.37.7",
     "winston": "^3.17.0"
   },
   "devDependencies": {

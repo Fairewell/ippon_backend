@@ -15,6 +15,7 @@ CREATE TABLE Services (
     name VARCHAR(100) NOT NULL,
     description TEXT,
     price_per_day DECIMAL(10,2) NOT NULL,
+    imageUrl text,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
